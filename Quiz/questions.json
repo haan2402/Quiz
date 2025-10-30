@@ -1,0 +1,54 @@
+
+
+[
+  {
+    "QuestionText": "Vad heter Kanadas huvustad?",
+    "Options": [ "Montreal", "Toronto", "Ottawa" ],
+    "CorrectAnswer": 3
+  },
+  {
+    "QuestionText": "Vilken månad har minst dagar?",
+    "Options": [ "Mars", "Februari", "September" ],
+    "CorrectAnswer": 2
+  },
+  {
+    "QuestionText": "Vad heter världens högsta berg?",
+    "Options": [ "Kebnekaise", "K2", "Mount Everest" ],
+    "CorrectAnswer": 3
+  },
+  {
+    "QuestionText": "Hur många kontinenter finns det på jorden?",
+    "Options": [ "7", "8", "9" ],
+    "CorrectAnswer": 1
+  },
+  {
+    "QuestionText": "Vad heter den kemiska formeln för vatten?",
+    "Options": [ "CO2", "H2O", "O2" ],
+    "CorrectAnswer": 2
+  },
+  {
+    "QuestionText": "Vilken planet är det som ligger närmast solen?",
+    "Options": [ "Venus", "Jorden", "Merkurius" ],
+    "CorrectAnswer": 3
+  },
+  {
+    "QuestionText": "Vad heter världens längsta flod?",
+    "Options": [ "Nilen", "Amazonas", "Mississippi" ],
+    "CorrectAnswer": 1
+  },
+  {
+    "QuestionText": "Hur många spelare är det i ett lag på en fotbollsplan?",
+    "Options": [ "10", "11", "12" ],
+    "CorrectAnswer": 2
+  },
+  {
+    "QuestionText": "Hur många ben har en spindel?",
+    "Options": [ "8", "6", "10" ],
+    "CorrectAnswer": 1
+  },
+  {
+    "QuestionText": "Vad får man för färg om man blandar gult och blått?",
+    "Options": [ "Orange", "Brun", "Grön" ],
+    "CorrectAnswer": 3
+  }
+]
