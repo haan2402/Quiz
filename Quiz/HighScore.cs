@@ -45,29 +45,47 @@ namespace Quiz
         //visar HighScore resultaten
         public void ShowHighScore()
         {
+            //rensar konsol och skriver ut rubriken
             Console.Clear();
             Console.WriteLine("=======================================================");
             Console.WriteLine("                     HIGHSCORE ");
             Console.WriteLine("=======================================================");
 
+            //hämtar sparade resultat från json-fil 
             var results = LoadResult();
+
+            //om inga resultat finns visas ett meddelande
             if (results.Count == 0)
             {
                 Console.WriteLine("Finns inga resultat att visa ännu!");
             } else
             {
+                //denna håller koll på vilekn plats man hamnar pp i topplistan
                 int ranking = 1;
 
+                //loopar genom de 15 bästa resultaten
                 foreach( var r in results.Take(15))
                 {
-                    string rankText = ranking switch
-                    {
-                        1 => "1. ",
-                        2 => "2. ",
-                        3 => "3. ",
-                        _ => " "
-                    }; 
+                    string rankText;
 
+                    //bestämmer hur resultaten skrivs ut i topplistan
+                    switch (ranking)
+                    {
+                        case 1:
+                            rankText = "1. ";
+                            break;
+                        case 2:
+                            rankText = "2. ";
+                            break;
+                        case 3:
+                            rankText = "3. ";
+                            break;
+                        default:
+                            rankText = " ";
+                            break;
+
+                    }
+                    //skriver ut resultatet
                     Console.WriteLine($"{rankText} {r.Player, -15} {r.Score}/{r.Total} poäng - {r.Date.ToShortDateString()}");
                     ranking++;
                 }
